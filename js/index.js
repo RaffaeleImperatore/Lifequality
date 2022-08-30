@@ -37,3 +37,11 @@ bottone.addEventListener('click', function(){
         getData();  
     } 
 })
+
+
+document.getElementById("city").addEventListener('keyup', function(event){
+    event.preventDefault(); 
+    if (event.key === 'Enter') {
+         document.getElementById("searchButton").click(); 
+        } 
+    }); 
